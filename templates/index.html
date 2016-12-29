@@ -1,0 +1,17 @@
+<form action="/update" method="post" id="update_form">
+    module:<br>
+    <select name="module">
+        {% for m in modules %}
+            <option>{{ m }}</option>
+        {% endfor %}
+    </select>
+    <br/>
+    destination ip address:<br>
+    <input type="text" name="ip_dest"><br>
+    user:<br>
+    <input type="text" name="user_dest"><br>
+    password:<br>
+    <input type="text" name="password_dest">
+    <br/>
+    <input type="submit" value="Submit">
+</form>
